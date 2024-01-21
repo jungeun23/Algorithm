@@ -7,7 +7,6 @@ public class Main {
         n = sc.nextInt();
         if(n>=1 && n <=100) {
             for(int i=0; i<n; i++){
-                String line = "";
                 for(int j=n-1; j>= 0; j--){
                     if(j<=i){
                         System.out.printf("*");
