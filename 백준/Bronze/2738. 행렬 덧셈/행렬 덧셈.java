@@ -34,11 +34,13 @@ public class Main {
 
     public static int[][]  getArray() {
         int[][] a = new int[n][m];
+        String[] strArr;
+        int v = 0;
             for(int i = 0; i < n; i++){
                 line = sc.nextLine();
-                String[] strArr = line.split(" ");
+                strArr = line.split(" ");
                 for(int j = 0; j < m; j++){
-                    int v = Integer.parseInt(strArr[j]);
+                    v = Integer.parseInt(strArr[j]);
                     if(Math.abs(v) <= 100){
                         a[i][j] = v;
                     } else return null;
